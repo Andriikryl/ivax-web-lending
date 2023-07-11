@@ -23,10 +23,35 @@ export default function Hero() {
               <MainBtn text="Check with us" />
             </div>
           </div>
-          <div>
-            <Image src={HeroImage} width={494} height={672} alt="hero image" />
+          <div className={style.image__box}>
+            <div className={style.box}>
+              <Image
+                src={HeroImage}
+                width={494}
+                height={672}
+                alt="hero image"
+              />
+            </div>
           </div>
         </div>
+        <ul className={style.hero__list}>
+          <li className={style.list__item}>
+            <span className={style.item__number}>20+</span>
+            <span className={style.item__description}>Experts</span>
+          </li>
+          <li className={style.list__item}>
+            <span className={style.item__number}>25+</span>
+            <span className={style.item__description}>Verticals</span>
+          </li>
+          <li className={style.list__item}>
+            <span className={style.item__number}>50+</span>
+            <span className={style.item__description}>Regular customers</span>
+          </li>
+          <li className={style.list__item}>
+            <span className={style.item__number}>110+</span>
+            <span className={style.item__description}>Completed projects</span>
+          </li>
+        </ul>
       </Container>
     </section>
   );

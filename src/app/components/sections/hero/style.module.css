@@ -1,9 +1,9 @@
 
-
 .hero__box{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    margin-block-end: 76px;
 }
 
 .hero__title{
@@ -33,3 +33,51 @@
     margin-inline-end: 100px;
     flex-wrap: wrap;
 }
+
+.hero__list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 30ch), 1fr));
+    gap: 30px;
+}
+
+.list__item{
+    display: flex;
+    flex-direction: column;
+    text-align: left;    
+}
+
+.item__number{
+    color: #2A524C;
+    font-family: League Spartan;
+    font-size: 160px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.item__description{
+    color: var(--323232, #323232);
+    font-family: League Spartan;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.box{
+    animation-name: bounce-1;
+    animation-timing-function: linear;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    transform-origin: bottom;
+}
+@keyframes bounce-1 {
+    0%   { transform: translateY(0); }
+    50%  { transform: translateY(-70px); }
+    100% { transform: translateY(0); }
+}
+
+.image__box{
+    position: relative;
+}
+
