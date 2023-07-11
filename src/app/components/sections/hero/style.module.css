@@ -1,0 +1,35 @@
+
+
+.hero__box{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.hero__title{
+    margin-inline-start: 50px;
+    color: #2A524C;
+    font-family: League Spartan;
+    font-size: 140px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-block-end: 73px;
+}
+
+.title__decor{
+    color: hsla(45, 86%, 62%, 1);
+}
+
+.title__space{
+    margin-inline-start: 150px;
+}
+
+.flex__group{
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    justify-content: end;
+    margin-inline-end: 100px;
+    flex-wrap: wrap;
+}
