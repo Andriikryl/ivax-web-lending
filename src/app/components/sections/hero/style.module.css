@@ -1,4 +1,6 @@
-
+.hero{
+    margin-block-end: 150px;
+}
 .hero__box{
     display: flex;
     justify-content: space-between;
