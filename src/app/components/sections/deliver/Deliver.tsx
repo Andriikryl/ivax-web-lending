@@ -63,9 +63,9 @@ export default function Deliver() {
                 <li className={style.sub__item}>Social</li>
               </ul>
             </li>
-            <li className={style.list__itemImage}>
+            {/* <li className={style.list__itemImage}>
               <Image src={MainImage} width={514} height={641} alt="image" />
-            </li>
+            </li> */}
           </ul>
         </div>
       </Container>

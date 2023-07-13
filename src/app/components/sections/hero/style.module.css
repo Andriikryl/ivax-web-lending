@@ -12,7 +12,7 @@
     margin-inline-start: 50px;
     color: #2A524C;
     font-family: League Spartan;
-    font-size: 140px;
+    font-size: clamp(25px, 5vw + 2rem, 140px);
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -51,7 +51,7 @@
 .item__number{
     color: #2A524C;
     font-family: League Spartan;
-    font-size: 160px;
+    font-size: clamp(25px, 5vw + 2rem, 160px);
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -60,7 +60,7 @@
 .item__description{
     color: var(--323232, #323232);
     font-family: League Spartan;
-    font-size: 32px;
+    font-size: clamp(20px, 5vw + 2rem, 32px);
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -79,7 +79,30 @@
     100% { transform: translateY(0); }
 }
 
+.box img{
+    object-fit: contain;
+}
+
 .image__box{
     position: relative;
 }
 
+
+
+@media (max-width: 990px) {
+    .hero__box{
+        justify-content: center;
+    }
+    .hero__info{
+        order: 2;
+    }
+    .image__box{
+        order: 1;
+    }
+    .hero__list{
+        place-items: center;
+    }
+    .list__item{
+        max-width: 162px;
+    }
+}

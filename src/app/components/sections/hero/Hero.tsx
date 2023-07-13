@@ -11,7 +11,7 @@ export default function Hero() {
     <section className={style.hero}>
       <Container className={style.hero__container}>
         <div className={style.hero__box}>
-          <div>
+          <div className={style.hero__info}>
             <h1 className={style.hero__title}>
               Paint <br />
               your thoughts <br />
