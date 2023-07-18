@@ -1,6 +1,7 @@
 import React from "react";
 import style from "./style.module.css";
 import { Container } from "../../container/Container";
+import MainBtn from "../../btns/MainBtn";
 
 export default function Things() {
   return (
@@ -33,6 +34,9 @@ export default function Things() {
               </li>
             </ul>
           </div>
+        </div>
+        <div className={style.btn__box}>
+          <MainBtn text="Talk to us" />
         </div>
       </Container>
     </section>

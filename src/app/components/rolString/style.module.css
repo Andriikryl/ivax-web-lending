@@ -1,0 +1,54 @@
+.marquee {
+    display: flex;
+    overflow: hidden;
+    user-select: none;
+    position: relative;
+    -webkit-mask-image: linear-gradient(to right, hsla(0deg, 0%, 0%, 0), hsl(0deg, 0%, 0%) 20%, hsl(0deg, 0%, 0%) 80%, hsla(0deg, 0%, 0%, 0));
+    mask-image: linear-gradient(to right, hsla(0deg, 0%, 0%, 0), hsl(0deg, 0%, 0%) 20%, hsl(0deg, 0%, 0%) 80%, hsla(0deg, 0%, 0%, 0));
+    z-index: 10;
+  }
+  
+  .marquee__content {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 21px;
+    min-width: 100%;
+    animation: scroll-x 40s linear infinite;
+    margin-inline-end: 20px; 
+  }
+
+  .marquee__item{
+    --size-lg: 120px;
+    font-size: clamp(40px, 5vw + 2rem, var(--size-lg) );
+    color: hsl(171, 32%, 24%);
+    font-family: League Spartan;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  .marquee__item__stroke{
+    --size-lg: 120px;
+    font-size: clamp(40px, 5vw + 2rem, var(--size-lg) );
+    font-family: League Spartan;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    text-align: center;
+    -webkit-text-stroke-color: hsl(171, 32%, 24%);;
+    -webkit-text-stroke-width: 1px;
+    color: transparent;
+    text-transform: uppercase;
+  }
+  
+  @keyframes scroll-x {
+    from {
+      transform: translateX (0);
+    }
+    to {
+      transform: translateX(calc(-100% - 21px));
+    }
+  }

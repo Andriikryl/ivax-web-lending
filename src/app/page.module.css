@@ -1,0 +1,24 @@
+.marquee__item{
+    --size-lg: 120px;
+    font-size: clamp(40px, 5vw + 2rem, var(--size-lg) );
+    color: hsl(171, 32%, 24%);
+    font-family: League Spartan;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  .marquee__item__stroke{
+    --size-lg: 120px;
+    font-size: clamp(40px, 5vw + 2rem, var(--size-lg) );
+    font-family: League Spartan;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    text-align: center;
+    -webkit-text-stroke-color: hsl(171, 32%, 24%);;
+    -webkit-text-stroke-width: 1px;
+    color: transparent;
+    text-transform: uppercase;
+  }

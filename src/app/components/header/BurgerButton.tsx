@@ -1,3 +1,4 @@
+import MainBtn from "../btns/MainBtn";
 import styles from "./style.module.css";
 
 interface IBurgerButton {
