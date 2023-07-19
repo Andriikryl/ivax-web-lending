@@ -18,3 +18,85 @@
     font-weight: 700;
     line-height: normal;
 }
+
+.card__list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 30ch), 1fr));
+    gap: 40px;  
+    margin-block-end: 72px;
+}
+
+.card__img{
+    margin-block-end: 24px;
+}
+
+.card__category{
+    color: var(--f-2-c-94-c, #F2C94C);
+    font-family: League Spartan;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-block-end: 16px;
+}
+
+.card__title{
+    color: var(--2-a-524-c, #2A524C);
+    font-family: League Spartan;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.flex__group{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-block-end: 56px;
+}
+
+.button{
+    color: var(--style, #06171E);
+    font-family: League Spartan;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    transition: all 500ms ease-in-out;
+    position: relative;
+}
+
+.button__amount{
+    color: var(--style, #06171E);
+    font-family: League Spartan;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    position: absolute;
+    top: -13px;
+    right: -7px;
+}
+
+
+.button:hover{
+    color: var(--f-2-c-94-c, #F2C94C);
+}
+
+.btn__box{
+    display: flex;
+    gap: 80px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.project__btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

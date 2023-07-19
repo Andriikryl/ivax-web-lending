@@ -1,5 +1,6 @@
 "use client";
 import Image from "next/image";
+import style from "./style.module.css";
 
 type Item = {
   id: number | string;
@@ -17,13 +18,13 @@ const Card: React.FC<CardProps> = ({ item }) => {
     <>
       {item.map((val: Item) => {
         return (
-          <div key={val.id}>
-            <div>
+          <li key={val.id} className={style.card}>
+            <div className={style.card__img}>
               <Image src={val.img} width={374} height={455} alt="image" />
             </div>
-            <span>{val.category}</span>
-            <h4>{val.title}</h4>
-          </div>
+            <span className={style.card__category}>{val.category}</span>
+            <h4 className={style.card__title}>{val.title}</h4>
+          </li>
         );
       })}
     </>
